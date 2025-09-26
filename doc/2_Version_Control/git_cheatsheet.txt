@@ -6,7 +6,7 @@ git checkout: Selects which branch you would like to edit
     - git checkout <branch name>
 
 git pull: Updates a local repository with changes from a remote repository
-
+    - -u <branch> necessary for first commit in a new branch
 git push: Uploads local repository content to a remote repository
     - Only works if your local has the most recent changes of the remote
 
@@ -15,3 +15,9 @@ git merge: Combines two branches to create one with all changes
 git fetch: Obtains all commits, files and refs from a remote repository
 
 git rebase: Used the same way as merge
+
+git add: Adds (changes to) files into your local repository
+
+git status: Tells information about your current branch
+
+git log: Shows commits in reverse chronological order
