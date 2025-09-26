@@ -1,0 +1,17 @@
+git commit: Creates snapshot of previous code (version history)
+
+git branch: Copies main code and creates seperate workspace 
+
+git checkout: Selects which branch you would like to edit
+    - git checkout <branch name>
+
+git pull: Updates a local repository with changes from a remote repository
+
+git push: Uploads local repository content to a remote repository
+    - Only works if your local has the most recent changes of the remote
+
+git merge: Combines two branches to create one with all changes
+
+git fetch: Obtains all commits, files and refs from a remote repository
+
+git rebase: Used the same way as merge
