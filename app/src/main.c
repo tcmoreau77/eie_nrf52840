@@ -61,20 +61,32 @@ static const struct gpio_dt_spec led3 = GPIO_DT_SPEC_GET(LED3_NODE, gpios);
         k_msleep(300);
 
         gpio_pin_toggle_dt(&led0);
+
+        k_msleep(300);
+
         gpio_pin_toggle_dt(&led1);
         
         k_msleep(300);
 
         gpio_pin_toggle_dt(&led1);
+
+        k_msleep(300);
+
         gpio_pin_toggle_dt(&led2);
 
         k_msleep(300);
 
         gpio_pin_toggle_dt(&led2);
+
+        k_msleep(300);
+
         gpio_pin_toggle_dt(&led3);
 
         k_msleep(300);
 
+        gpio_pin_toggle_dt(&led3);
+
+        k_msleep(300);
     }
     return 0;
  }
