@@ -40,8 +40,8 @@ int state_machine_run(){
     return smf_run_state(SMF_CTX(&led_state_object));
 }
 
-static void led_on_state_entry(void* o){
-    LED_set(LED0, LED_ON);
+static void led_on_state_exit(void* o){
+    LED_set(LED0, LED_OFF);
 }
 
 static enum smf_state_result led_on_state_run(void* o){
@@ -56,8 +56,8 @@ static enum smf_state_result led_on_state_run(void* o){
     return SMF_EVENT_HANDLED;
 }
 
-static void led_off_state_entry(void* o) {
-    LED_set(LED0, LED_OFF);
+static void led_off_state_exit(void* o) {
+    LED_set(LED0, LED_ON);
 }
 
 static enum smf_state_result led_off_state_run(void* o){
