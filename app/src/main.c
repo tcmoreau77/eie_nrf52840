@@ -30,7 +30,7 @@ int main(void)
 
         int ret = state_machine_run();
         if (0 > ret){
-            return 0
+            return 0;
         }
 
         k_msleep(SLEEP_MS);
