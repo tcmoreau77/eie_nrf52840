@@ -4,6 +4,10 @@
 
 #include <zephyr/smf.h>
 
+<<<<<<< HEAD
+=======
+#include "BTN.h"
+>>>>>>> main
 #include "LED.h"
 #include "my_state_machine.h"
 

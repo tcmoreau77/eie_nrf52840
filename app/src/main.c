@@ -30,10 +30,22 @@ int main(void)
 
         int ret = state_machine_run();
         if (0 > ret){
+<<<<<<< HEAD
             return 0
+=======
+            return 0;
+>>>>>>> main
         }
 
         k_msleep(SLEEP_MS);
     }
+    
+  if (0 > LED_init()) {
     return 0;
+  }
+
+  while(1) {
+    k_msleep(SLEEP_MS);
+  }
+	return 0;
 }
