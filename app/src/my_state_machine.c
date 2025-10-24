@@ -22,12 +22,14 @@ typedef struct {
     struct smf_ctx ctx;
 
     uint16_t count;
-} led_state_object_t
+} led_state_object_t;
 
 static const struct smf_state led_states[] = {
     [LED_ON_STATE] = SMF_CREATE_STATE(led_on_state_entry, led_on_state_run, NULL, NULL, NULL),
     [LED_OFF_STATE] = SMF_CREATE_STATE(led_off_state_entry, led_off_state_run, NULL, NULL ,NULL)
 };
+
+static led_state_object_t led_state_object;
 
 void state_machine_init(){
     led_state_object.count = 0;
