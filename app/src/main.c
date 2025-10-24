@@ -35,5 +35,13 @@ int main(void)
 
         k_msleep(SLEEP_MS);
     }
+    
+  if (0 > LED_init()) {
     return 0;
+  }
+
+  while(1) {
+    k_msleep(SLEEP_MS);
+  }
+	return 0;
 }
