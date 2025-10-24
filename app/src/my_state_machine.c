@@ -8,9 +8,9 @@
 #include "LED.h"
 #include "my_state_machine.h"
 
-static void led_on_state_entry(void* o);
+static void led_on_state_exit(void* o);
 static enum smf_state_result led_on_state_run(void* o);
-static void led_off_state_entry(void* o);
+static void led_off_state_exit(void* o);
 static enum smf_state_result led_off_state_run(void* o);
 
 enum led_state_machine_states {
