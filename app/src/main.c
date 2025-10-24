@@ -7,7 +7,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
-#include <zephyr/syscalls/printk.h>
+#include <zephyr/sys/printk.h>
 
 #include "BTN.h"
 #include "LED.h"
@@ -28,7 +28,7 @@ int main(void)
 
     while(1){
 
-        int ret = state-machine_run();
+        int ret = state_machine_run();
         if (0 > ret){
             return 0
         }
